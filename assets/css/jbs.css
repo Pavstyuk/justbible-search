@@ -1,0 +1,244 @@
+.jbs-wrapper {
+    --jbs-primary: #536ea7;
+    --jbs-primary-bright: #618dec;
+    --jbs-primary-dark: #3e5588;
+    --jbs-primary-back: #e7ecf7;
+    --jbs-error: #c50b0b;
+    --jbs-secondary-light: #dfe3ec;
+    --jbs-secondary: #838996;
+    --jbs-secondary-dark: #3c3f46;
+    --jbs-error-back: #f0dede;
+    --jbs-button-text-color: #ffffff;
+    font-family: inherit;
+    width: 100%;
+    max-width: 40rem;
+}
+
+.jbs-title {
+    margin-bottom: 0.5rem;
+    padding: 0;
+    font-size: 1.75rem;
+}
+
+.jbs-form {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.jbs-form ::placeholder {
+    font-size: 1.125rem;
+    color: var(--jbs-secondary);
+}
+
+.jbs-input,
+.jbs-button {
+    border: none;
+    box-shadow: none;
+}
+
+.jbs-input {
+    flex: 1 1 30rem;
+    display: block;
+    border-radius: var(--jbs-custom-radius, 0.25rem);
+    padding: 1rem 0.5rem;
+    line-height: 1;
+    font-size: 1.125rem;
+    font-weight: normal;
+    min-height: 3.5rem;
+    outline-offset: -0.125rem;
+    outline-width: 0.125rem;
+    outline-color: var(--jbs-custom-secondary, var(--jbs-secondary));
+    border: 0.125rem solid var(--jbs-custom-secondary, var(--jbs-secondary));
+}
+
+.jbs-input:focus,
+.jbs-input:focus-visible {
+    outline-color: var(--jbs-custom-primary, var(--jbs-primary));
+}
+
+.jbs-button {
+    flex: 1 1 10rem;
+    display: inline-block;
+    position: relative;
+    border-radius: var(--jbs-custom-radius, 0.25rem);
+    padding: 1rem 2rem;
+    line-height: 1;
+    font-weight: normal;
+    font-size: 1.125rem;
+    min-height: 3.5rem;
+    background-color: var(--jbs-custom-primary, var(--jbs-primary));
+    color: var(--jbs-custom-button-text-color, var(--jbs-button-text-color));
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.jbs-button:hover {
+    background-color: var(--jbs-custom-primary-dark, var(--jbs-primary-dark));
+}
+
+.jbs-button::after {
+    content: '';
+    position: absolute;
+    height: 1rem;
+    aspect-ratio: 1/1;
+    top: calc(50% - 0.5rem);
+    left: calc(50% - 0.5rem);
+    border-radius: 50%;
+    border-top: 0.125rem solid transparent;
+    border-right: 0.125rem solid rgba(255, 255, 255, 0.55);
+    border-bottom: 0.125rem solid rgba(255, 255, 255, 0.55);
+    border-left: 0.125rem solid rgba(255, 255, 255, 0.55);
+    animation: jbs-rotate 1s linear infinite;
+    animation-play-state: paused;
+    opacity: 0;
+}
+
+@keyframes jbs-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.htmx-request .jbs-button {
+    color: transparent;
+    pointer-events: none;
+}
+
+.htmx-request .jbs-button::after {
+    animation-play-state: running;
+    opacity: 1;
+}
+
+.result-info,
+.result-error {
+    padding: 1rem;
+    border-radius: 0.25rem;
+}
+
+.result-info {
+    background-color: var(--jbs-primary-back);
+    color: var(--jbs-primary-dark);
+    border: 0.0625rem solid var(--jbs-primary-dark);
+}
+
+.result-error {
+    color: var(--jbs-error);
+    background-color: var(--jbs-error-back);
+    border: 0.0625rem solid var(--jbs-error);
+}
+
+.result-error p,
+.result-info p {
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.result-info p,
+.result-error p {
+    margin: 0;
+    padding: 0;
+}
+
+.jbs-search-results {
+    display: grid;
+    gap: 2rem;
+}
+
+.jbs-result-item p {
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.jbs-result-item p b {
+    color: var(--jbs-primary-bright);
+}
+
+.jbs-result-item cite {
+    display: inline-block;
+    color: var(--jbs-secondary);
+    font-weight: 700;
+    font-style: normal;
+    text-align: right;
+
+}
+
+.jbs-result-item__chapter {
+    font-size: 1rem;
+    padding-left: 5rem;
+}
+
+.jbs-result-item__chapter sup {
+    padding: 0 0.25rem 0 0;
+    color: var(--jbs-secondary)
+}
+
+.jbs-result-item__chapter h3 {
+    margin: 1rem 0 0 0;
+}
+
+p.jbs-marked {
+    font-weight: bold;
+}
+
+button.jbs-chapter-button {
+    position: relative;
+    width: 1.5rem;
+    aspect-ratio: 1/1;
+    border: none;
+    background-color: var(--jbs-secondary-light);
+    font-size: 1rem;
+    color: var(--jbs-secondary-dark);
+    padding: 0;
+    border-radius: var(--jbs-custom-radius, 0.25rem);
+    cursor: pointer;
+    outline: none;
+    transition: 0.15s;
+}
+
+button.jbs-chapter-button>span {
+    position: absolute;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='32' height='32' version='1.1' viewBox='0 0 8.4667 8.4667' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m2.5504 7.2905-1e-7 -6.1142 3.3659 3.0571z'/%3E%3C/svg%3E%0A");
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.15s;
+    opacity: 0.45;
+}
+
+button.jbs-chapter-button[data-possible='false']>span {
+    transform: rotate(90deg);
+    opacity: 0.65;
+}
+
+
+button.jbs-chapter-button.htmx-request {
+    pointer-events: none;
+}
+
+.jbs-result-description {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+@media screen and (max-width: 480px) {
+    .jbs-form {
+        flex-wrap: wrap;
+    }
+
+    .jbs-result-item__chapter {
+        padding-left: 2rem;
+    }
+}

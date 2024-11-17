@@ -1,0 +1,132 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Just Bible Search\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-09 18:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.11; wp-6.6.2\n"
+"X-Domain: jbs"
+
+#: content-page.php:22
+msgid "adds a title before the search form"
+msgstr ""
+
+#: content-page.php:13
+msgid "Advanced ShortCode with attributes"
+msgstr ""
+
+#: content-page.php:5
+msgid ""
+"All you need to do is simply paste the plugin's shortcode into any page of "
+"your site to display search form."
+msgstr ""
+
+#: content-page.php:23
+msgid "changes the text in the search query input field"
+msgstr ""
+
+#: content-page.php:24
+msgid "changes the text on the button in the form"
+msgstr ""
+
+#: content-page.php:7
+msgid "Default ShortCode"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://pavstyuk.ru/"
+msgstr ""
+
+#: justbible-search.php:45
+msgid "Instructions"
+msgstr ""
+
+#. Name of the plugin
+#: justbible-search.php:55
+msgid "Just Bible Search"
+msgstr ""
+
+#: content-page.php:4
+msgid "Just Bible Search Plugin Instructions"
+msgstr ""
+
+#. Author of the plugin
+msgid "Mikhail Pavstyuk"
+msgstr ""
+
+#: content-page.php:32
+msgid "Modern Russian Translation of the Russian Bible Society, 2015"
+msgstr ""
+
+#: content-page.php:28
+msgid "More about translations"
+msgstr ""
+
+#: content-page.php:18
+msgid "Possible ShortCode attributes"
+msgstr ""
+
+#: content-shortcode.php:20
+msgid "Russian Bible Society"
+msgstr ""
+
+#: content-shortcode.php:21
+msgid "Russian Synodal Text"
+msgstr ""
+
+#: content-page.php:33
+msgid "Russian Synodal Translation, Russian Bible Society, 1876"
+msgstr ""
+
+#: justbible-search.php:69
+msgid "Search"
+msgstr ""
+
+#: content-page.php:15
+msgid "Search for words in the Bible"
+msgstr ""
+
+#: justbible-search.php:70
+msgid "Search request..."
+msgstr ""
+
+#: content-page.php:21
+msgid ""
+"specify options of Bible translation. This plugin has only three "
+"translations in this moment:"
+msgstr ""
+
+#: content-page.php:15
+msgid "Start Searching"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"The plugin integrates the search for words in the Bible in the Synodal "
+"translation on the WordPress site."
+msgstr ""
+
+#: content-page.php:10
+msgid "The short code displays form for Bible searching with default settings."
+msgstr ""
+
+#: content-page.php:41
+msgid "Version"
+msgstr ""
+
+#: content-page.php:15
+msgid "What are you looking for?"
+msgstr ""
+
+#: content-page.php:16
+msgid "You can additionally specify one or more shortcode attributes."
+msgstr ""
